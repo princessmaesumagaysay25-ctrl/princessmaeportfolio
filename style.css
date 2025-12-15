@@ -719,3 +719,113 @@
                font-size: 0.85rem;
            }
        }
+       *,
+            *::before,
+            *::after {
+            box-sizing: border-box;
+            }
+
+            html, body {
+            width: 100%;
+            overflow-x: hidden;
+            }
+
+            img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            }
+            @media (max-width: 768px) {
+
+  /* NAVIGATION */
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding: 15px 0;
+            }
+
+            nav {
+                position: relative;
+            }
+
+            /* HERO SECTION */
+            .hero {
+                min-height: 100vh;
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .tagline {
+                font-size: 0.95rem;
+            }
+
+            /* ABOUT */
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-img {
+                margin-bottom: 20px;
+            }
+
+            /* EDUCATION */
+            .abot-content {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            /* SKILLS */
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* PROJECTS */
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* CONTACT */
+            .contact-content {
+                flex-direction: column;
+            }
+
+            .contact-form {
+                width: 100%;
+            }
+
+            footer {
+                font-size: 0.9rem;
+                padding: 20px;
+            }
+            }
+            @media (max-width: 1024px) {
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .skills-grid,
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-content {
+                gap: 30px;
+            }
+            }
+            @media (max-width: 1280px) {
+  section {
+    padding: 60px 30px;
+  }
+}
+
+
